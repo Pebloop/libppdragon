@@ -1,0 +1,77 @@
+\hypertarget{epitech_2string_8h}{}\doxysection{/home/\+Pebloop/\+Code/lib/libdragon2/src/lib/libdragon2/include/epitech/string.h File Reference}
+\label{epitech_2string_8h}\index{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/include/epitech/string.h@{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/include/epitech/string.h}}
+
+
+Define strings related functions.  
+
+
+{\ttfamily \#include \char`\"{}system/dg\+\_\+system.\+h\char`\"{}}\newline
+Include dependency graph for string.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{db/d9e/epitech_2string_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{epitech_2string_8h_a8bc26a688b8f56f1223f6b23ca139783}{dg\+\_\+strlen}} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the length of {\itshape str}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define strings related functions. 
+
+\begin{DoxyAuthor}{Author}
+Pebloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/09/2020
+\end{DoxyDate}
+Define strings related functions. Some of them are E\+P\+I\+T\+E\+CH related. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{epitech_2string_8h_a8bc26a688b8f56f1223f6b23ca139783}\label{epitech_2string_8h_a8bc26a688b8f56f1223f6b23ca139783}} 
+\index{string.h@{string.h}!dg\_strlen@{dg\_strlen}}
+\index{dg\_strlen@{dg\_strlen}!string.h@{string.h}}
+\doxysubsubsection{\texorpdfstring{dg\_strlen()}{dg\_strlen()}}
+{\footnotesize\ttfamily uint32\+\_\+t dg\+\_\+strlen (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the length of {\itshape str}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & Char array to get the length from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The length of {\itshape str}.
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+27/09/2020 
+\end{DoxyDate}
+
+
+Definition at line 24 of file dg\+\_\+strlen.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     uint32\_t size = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordflow}{if} (!str) \{}
+\DoxyCodeLine{29         \textcolor{keywordflow}{if} (\mbox{\hyperlink{dragon_2system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04b9d}{DEBUG}})}
+\DoxyCodeLine{30             DG\_WRITE(2, \textcolor{stringliteral}{"{}WARNING : dg\_strlen : str is NULL\(\backslash\)n"{}}, 34);}
+\DoxyCodeLine{31         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{32     \}}
+\DoxyCodeLine{33     \textcolor{keywordflow}{for} (size = 0; str[size]; size++);}
+\DoxyCodeLine{34     \textcolor{keywordflow}{return} size;}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}

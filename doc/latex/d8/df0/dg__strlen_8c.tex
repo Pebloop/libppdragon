@@ -1,0 +1,69 @@
+\hypertarget{dg__strlen_8c}{}\doxysection{/home/\+Pebloop/\+Code/lib/libdragon2/src/lib/libdragon2/src/epitech\+\_\+tools/string/dg\+\_\+strlen.c File Reference}
+\label{dg__strlen_8c}\index{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/src/epitech\_tools/string/dg\_strlen.c@{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/src/epitech\_tools/string/dg\_strlen.c}}
+
+
+Define dg\+\_\+strlen function.  
+
+
+{\ttfamily \#include \char`\"{}system/dg\+\_\+system.\+h\char`\"{}}\newline
+Include dependency graph for dg\+\_\+strlen.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{d5/daa/dg__strlen_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{dg__strlen_8c_a8bc26a688b8f56f1223f6b23ca139783}{dg\+\_\+strlen}} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em Get the length of {\itshape str}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define dg\+\_\+strlen function. 
+
+\begin{DoxyAuthor}{Author}
+Pebloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/09/2020
+\end{DoxyDate}
+Define dg\+\_\+strlen function. Return the length of {\itshape str}. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dg__strlen_8c_a8bc26a688b8f56f1223f6b23ca139783}\label{dg__strlen_8c_a8bc26a688b8f56f1223f6b23ca139783}} 
+\index{dg\_strlen.c@{dg\_strlen.c}!dg\_strlen@{dg\_strlen}}
+\index{dg\_strlen@{dg\_strlen}!dg\_strlen.c@{dg\_strlen.c}}
+\doxysubsubsection{\texorpdfstring{dg\_strlen()}{dg\_strlen()}}
+{\footnotesize\ttfamily uint32\+\_\+t dg\+\_\+strlen (\begin{DoxyParamCaption}\item[{char $\ast$}]{str }\end{DoxyParamCaption})}
+
+
+
+Get the length of {\itshape str}. 
+
+\begin{DoxyDate}{Date}
+27/09/2020 
+\end{DoxyDate}
+
+
+Definition at line 24 of file dg\+\_\+strlen.\+c.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     uint32\_t size = 0;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keywordflow}{if} (!str) \{}
+\DoxyCodeLine{29         \textcolor{keywordflow}{if} (\mbox{\hyperlink{dragon_2system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04b9d}{DEBUG}})}
+\DoxyCodeLine{30             DG\_WRITE(2, \textcolor{stringliteral}{"{}WARNING : dg\_strlen : str is NULL\(\backslash\)n"{}}, 34);}
+\DoxyCodeLine{31         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{32     \}}
+\DoxyCodeLine{33     \textcolor{keywordflow}{for} (size = 0; str[size]; size++);}
+\DoxyCodeLine{34     \textcolor{keywordflow}{return} size;}
+\DoxyCodeLine{35 \}}
+
+\end{DoxyCode}
