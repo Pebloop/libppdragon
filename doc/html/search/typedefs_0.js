@@ -1,4 +1,20 @@
 var searchData=
 [
-  ['os_5ft_22',['os_t',['../dc/d29/dragon_2system_2dg__system_8h.html#afc0d143b196dcaf1a61d37fea9d3c479',1,'os_t():&#160;dg_system.h'],['../db/d36/system_2dg__system_8h.html#afc0d143b196dcaf1a61d37fea9d3c479',1,'os_t():&#160;dg_system.h']]]
+  ['dg_5fcircle_5ft_109',['dg_circle_t',['../dg__utils_8h.html#a9f1fb674b3404d0dbddef5327ab8caaa',1,'dg_utils.h']]],
+  ['dg_5fend_5ft_110',['dg_end_t',['../dg__window_8h.html#aea8ab188f1f1ca3161e296b4727bc900',1,'dg_window.h']]],
+  ['dg_5finit_5ft_111',['dg_init_t',['../dg__window_8h.html#ab6b1753091cda39814193b71c731d63e',1,'dg_window.h']]],
+  ['dg_5floop_5ft_112',['dg_loop_t',['../dg__window_8h.html#a7f890aafac6a9190dfce2da1dc61caf6',1,'dg_window.h']]],
+  ['dg_5frect3_5ft_113',['dg_rect3_t',['../dg__utils_8h.html#aa240af0cc00ad1dc0c590a1861cea961',1,'dg_utils.h']]],
+  ['dg_5frect_5ft_114',['dg_rect_t',['../dg__utils_8h.html#a753ec0f91ebc2a15d45433d588541602',1,'dg_utils.h']]],
+  ['dg_5frender_5fwindow_5ft_115',['dg_render_window_t',['../dg__window_8h.html#ad777ff7e27cb75ceec55aab190f3553d',1,'dg_window.h']]],
+  ['dg_5fsphere_5ft_116',['dg_sphere_t',['../dg__utils_8h.html#a8c508c236ad21c2e338cf44eee87aafd',1,'dg_utils.h']]],
+  ['dg_5fstart_5ft_117',['dg_start_t',['../dg__window_8h.html#a2078d7a63b4ec8d33ac42d532b84869c',1,'dg_window.h']]],
+  ['dg_5ftransform2_5ft_118',['dg_transform2_t',['../dg__utils_8h.html#a936e902cee1b3558af185f8ed0d80d9e',1,'dg_utils.h']]],
+  ['dg_5ftransform3_5ft_119',['dg_transform3_t',['../dg__utils_8h.html#aa1fcd30e78d5681ce4980e367d5d48d2',1,'dg_utils.h']]],
+  ['dg_5fvector2_5ft_120',['dg_vector2_t',['../dg__utils_8h.html#ae13c40b2517900ffb3b8e8c44b2e8fac',1,'dg_utils.h']]],
+  ['dg_5fvector3_5ft_121',['dg_vector3_t',['../dg__utils_8h.html#aefd4fb029807fd400fc4141ae32fb5a3',1,'dg_utils.h']]],
+  ['dg_5fvector4_5ft_122',['dg_vector4_t',['../dg__utils_8h.html#af59ad578d1d1352addc06f7ad045483a',1,'dg_utils.h']]],
+  ['dg_5fvideo_5fmode_5ft_123',['dg_video_mode_t',['../dg__window_8h.html#a600d03a3afc8f3da40d8f0cf88e0428d',1,'dg_window.h']]],
+  ['dg_5fwindow_5fcycle_5ft_124',['dg_window_cycle_t',['../dg__window_8h.html#a0381566f5348ed166ef4add8da75a453',1,'dg_window.h']]],
+  ['dg_5fwindow_5ft_125',['dg_window_t',['../dg__window_8h.html#a45b3e4835d9264e52ae115c795effec0',1,'dg_window.h']]]
 ];

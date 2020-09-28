@@ -1,0 +1,172 @@
+\hypertarget{dg__window_8h}{}\doxysection{src/lib/libdragon2/include/dragon/dragon/dg\+\_\+window.h File Reference}
+\label{dg__window_8h}\index{src/lib/libdragon2/include/dragon/dragon/dg\_window.h@{src/lib/libdragon2/include/dragon/dragon/dg\_window.h}}
+
+
+Define window related functions.  
+
+
+{\ttfamily \#include \char`\"{}system/dg\+\_\+system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dragon/dg\+\_\+utils.\+h\char`\"{}}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdg__video__mode}{dg\+\_\+video\+\_\+mode}}
+\begin{DoxyCompactList}\small\item\em Define the size and pixels of the video. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdg__render__window}{dg\+\_\+render\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em Define the rendering data of the window. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdg__window__cycle}{dg\+\_\+window\+\_\+cycle}}
+\begin{DoxyCompactList}\small\item\em Define the window cycle functions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em Define the window and its datas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$($\ast$ \mbox{\hyperlink{dg__window_8h_ab6b1753091cda39814193b71c731d63e}{dg\+\_\+init\+\_\+t}}) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{dg__window_8h_a2078d7a63b4ec8d33ac42d532b84869c}{dg\+\_\+start\+\_\+t}}) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)
+\item 
+typedef void($\ast$ \mbox{\hyperlink{dg__window_8h_a7f890aafac6a9190dfce2da1dc61caf6}{dg\+\_\+loop\+\_\+t}}) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data, uint64\+\_\+t dt)
+\item 
+typedef uint32\+\_\+t($\ast$ \mbox{\hyperlink{dg__window_8h_aea8ab188f1f1ca3161e296b4727bc900}{dg\+\_\+end\+\_\+t}}) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)
+\item 
+typedef struct \mbox{\hyperlink{structdg__video__mode}{dg\+\_\+video\+\_\+mode}} \mbox{\hyperlink{dg__window_8h_a600d03a3afc8f3da40d8f0cf88e0428d}{dg\+\_\+video\+\_\+mode\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Define the size and pixels of the video. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structdg__render__window}{dg\+\_\+render\+\_\+window}} \mbox{\hyperlink{dg__window_8h_ad777ff7e27cb75ceec55aab190f3553d}{dg\+\_\+render\+\_\+window\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Define the rendering data of the window. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structdg__window__cycle}{dg\+\_\+window\+\_\+cycle}} \mbox{\hyperlink{dg__window_8h_a0381566f5348ed166ef4add8da75a453}{dg\+\_\+window\+\_\+cycle\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Define the window cycle functions. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} \mbox{\hyperlink{dg__window_8h_a45b3e4835d9264e52ae115c795effec0}{dg\+\_\+window\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Define the window and its datas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Define window related functions. 
+
+\begin{DoxyAuthor}{Author}
+Pebloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/09/2020
+\end{DoxyDate}
+Define window related functions. 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{dg__window_8h_aea8ab188f1f1ca3161e296b4727bc900}\label{dg__window_8h_aea8ab188f1f1ca3161e296b4727bc900}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_end\_t@{dg\_end\_t}}
+\index{dg\_end\_t@{dg\_end\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_end\_t}{dg\_end\_t}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t($\ast$ dg\+\_\+end\+\_\+t) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)}
+
+launched when window end, after {\itshape dg\+\_\+loop\+\_\+t} 
+
+Definition at line 32 of file dg\+\_\+window.\+h.
+
+\mbox{\Hypertarget{dg__window_8h_ab6b1753091cda39814193b71c731d63e}\label{dg__window_8h_ab6b1753091cda39814193b71c731d63e}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_init\_t@{dg\_init\_t}}
+\index{dg\_init\_t@{dg\_init\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_init\_t}{dg\_init\_t}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ dg\+\_\+init\+\_\+t) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)}
+
+launched when window initialized 
+
+Definition at line 26 of file dg\+\_\+window.\+h.
+
+\mbox{\Hypertarget{dg__window_8h_a7f890aafac6a9190dfce2da1dc61caf6}\label{dg__window_8h_a7f890aafac6a9190dfce2da1dc61caf6}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_loop\_t@{dg\_loop\_t}}
+\index{dg\_loop\_t@{dg\_loop\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_loop\_t}{dg\_loop\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ dg\+\_\+loop\+\_\+t) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data, uint64\+\_\+t dt)}
+
+launched while window run, after {\itshape dg\+\_\+start\+\_\+t} 
+
+Definition at line 30 of file dg\+\_\+window.\+h.
+
+\mbox{\Hypertarget{dg__window_8h_ad777ff7e27cb75ceec55aab190f3553d}\label{dg__window_8h_ad777ff7e27cb75ceec55aab190f3553d}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_render\_window\_t@{dg\_render\_window\_t}}
+\index{dg\_render\_window\_t@{dg\_render\_window\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_render\_window\_t}{dg\_render\_window\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdg__render__window}{dg\+\_\+render\+\_\+window}} \mbox{\hyperlink{dg__window_8h_ad777ff7e27cb75ceec55aab190f3553d}{dg\+\_\+render\+\_\+window\+\_\+t}}}
+
+
+
+Define the rendering data of the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & is the screen size and bpp (see dg\+\_\+video\+\_\+mode\+\_\+t) \\
+\hline
+{\em name} & is the title of the window displayed at the top of the window. \\
+\hline
+{\em ptr} & link the rendering to the sub library (do not modify !). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dg__window_8h_a2078d7a63b4ec8d33ac42d532b84869c}\label{dg__window_8h_a2078d7a63b4ec8d33ac42d532b84869c}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_start\_t@{dg\_start\_t}}
+\index{dg\_start\_t@{dg\_start\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_start\_t}{dg\_start\_t}}
+{\footnotesize\ttfamily typedef void($\ast$ dg\+\_\+start\+\_\+t) (struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} $\ast$window, void $\ast$data)}
+
+launched before window first loop 
+
+Definition at line 28 of file dg\+\_\+window.\+h.
+
+\mbox{\Hypertarget{dg__window_8h_a600d03a3afc8f3da40d8f0cf88e0428d}\label{dg__window_8h_a600d03a3afc8f3da40d8f0cf88e0428d}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_video\_mode\_t@{dg\_video\_mode\_t}}
+\index{dg\_video\_mode\_t@{dg\_video\_mode\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_video\_mode\_t}{dg\_video\_mode\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdg__video__mode}{dg\+\_\+video\+\_\+mode}} \mbox{\hyperlink{dg__window_8h_a600d03a3afc8f3da40d8f0cf88e0428d}{dg\+\_\+video\+\_\+mode\+\_\+t}}}
+
+
+
+Define the size and pixels of the video. 
+
+The video mode define the size of the window in pixel, and the number of bits per pixels (number of colours per pixels). if you don\textquotesingle{}t know what to use, choose 32 bpp. 
+\begin{DoxyParams}{Parameters}
+{\em width} & (ussigned int) in pixel. \\
+\hline
+{\em height} & (ussigned int) in pixel. \\
+\hline
+{\em bpp} & (ussigned int) bit per pixel (32 by default). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dg__window_8h_a0381566f5348ed166ef4add8da75a453}\label{dg__window_8h_a0381566f5348ed166ef4add8da75a453}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_window\_cycle\_t@{dg\_window\_cycle\_t}}
+\index{dg\_window\_cycle\_t@{dg\_window\_cycle\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_window\_cycle\_t}{dg\_window\_cycle\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdg__window__cycle}{dg\+\_\+window\+\_\+cycle}} \mbox{\hyperlink{dg__window_8h_a0381566f5348ed166ef4add8da75a453}{dg\+\_\+window\+\_\+cycle\+\_\+t}}}
+
+
+
+Define the window cycle functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & (dg\+\_\+init\+\_\+t) Launched when the window is initialized. \\
+\hline
+{\em start} & (dg\+\_\+start\+\_\+t) Launched before the window first loop. \\
+\hline
+{\em loop} & (dg\+\_\+loop\+\_\+t) Launched while the window run, after {\itshape dg\+\_\+start\+\_\+t}. \\
+\hline
+{\em end} & (dg\+\_\+end\+\_\+t) Launched when the window end, after {\itshape dg\+\_\+loop\+\_\+t}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dg__window_8h_a45b3e4835d9264e52ae115c795effec0}\label{dg__window_8h_a45b3e4835d9264e52ae115c795effec0}} 
+\index{dg\_window.h@{dg\_window.h}!dg\_window\_t@{dg\_window\_t}}
+\index{dg\_window\_t@{dg\_window\_t}!dg\_window.h@{dg\_window.h}}
+\doxysubsubsection{\texorpdfstring{dg\_window\_t}{dg\_window\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structdg__window}{dg\+\_\+window}} \mbox{\hyperlink{dg__window_8h_a45b3e4835d9264e52ae115c795effec0}{dg\+\_\+window\+\_\+t}}}
+
+
+
+Define the window and its datas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & (dg\+\_\+render\+\_\+window\+\_\+t $\ast$) The rendering datas. \\
+\hline
+{\em cycle} & (dg\+\_\+window\+\_\+cycle\+\_\+t) The window cycle. \\
+\hline
+\end{DoxyParams}

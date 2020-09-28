@@ -1,14 +1,20 @@
-\hypertarget{system_2dg__system_8h}{}\doxysection{/home/\+Pebloop/\+Code/lib/libdragon2/src/lib/libdragon2/include/system/dg\+\_\+system.h File Reference}
-\label{system_2dg__system_8h}\index{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/include/system/dg\_system.h@{/home/Pebloop/Code/lib/libdragon2/src/lib/libdragon2/include/system/dg\_system.h}}
+\hypertarget{system_2dg__system_8h}{}\doxysection{src/lib/libdragon2/include/system/dg\+\_\+system.h File Reference}
+\label{system_2dg__system_8h}\index{src/lib/libdragon2/include/system/dg\_system.h@{src/lib/libdragon2/include/system/dg\_system.h}}
+
+
+Define system and os related stuffs.  
+
+
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{system_2dg__system_8h_a235fb0505f678839aa419fe70552db91}{D\+G\+\_\+\+M\+A\+L\+L\+OC}}(size)~malloc(size)
-\item 
+\begin{DoxyCompactList}\small\item\em See malloc function. \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{system_2dg__system_8h_adc04332f81c40aaf425b5501fe0faaac}{D\+G\+\_\+\+F\+R\+EE}}(ptr)~free(ptr)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em See free function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,10 +33,24 @@ enum \mbox{\hyperlink{system_2dg__system_8h_a3f3d2903c7f533d4714d065386a9e6e8}{o
 \begin{DoxyCompactItemize}
 \item 
 const bool \mbox{\hyperlink{system_2dg__system_8h_ae1329ee6e19fdd03bf941d5f1f70cf33}{I\+S\+\_\+\+E\+P\+I\+T\+E\+CH}} = false
-\item 
+\begin{DoxyCompactList}\small\item\em Define E\+P\+I\+T\+E\+CH restrictions. \end{DoxyCompactList}\item 
 const bool \mbox{\hyperlink{system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04b9d}{D\+E\+B\+UG}} = false
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Define debug output. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Define system and os related stuffs. 
+
+\begin{DoxyAuthor}{Author}
+Pebloop 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+27/09/2020
+\end{DoxyDate}
+Define system and os related stuffs. This file is used for compatibility purpose. 
 
 \doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{system_2dg__system_8h_adc04332f81c40aaf425b5501fe0faaac}\label{system_2dg__system_8h_adc04332f81c40aaf425b5501fe0faaac}} 
@@ -39,11 +59,27 @@ const bool \mbox{\hyperlink{system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04
 \doxysubsubsection{\texorpdfstring{DG\_FREE}{DG\_FREE}}
 {\footnotesize\ttfamily \#define D\+G\+\_\+\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~free(ptr)}
 
+
+
+See free function. 
+
+
+
+Definition at line 87 of file dg\+\_\+system.\+h.
+
 \mbox{\Hypertarget{system_2dg__system_8h_a235fb0505f678839aa419fe70552db91}\label{system_2dg__system_8h_a235fb0505f678839aa419fe70552db91}} 
 \index{dg\_system.h@{dg\_system.h}!DG\_MALLOC@{DG\_MALLOC}}
 \index{DG\_MALLOC@{DG\_MALLOC}!dg\_system.h@{dg\_system.h}}
 \doxysubsubsection{\texorpdfstring{DG\_MALLOC}{DG\_MALLOC}}
 {\footnotesize\ttfamily \#define D\+G\+\_\+\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{size }\end{DoxyParamCaption})~malloc(size)}
+
+
+
+See malloc function. 
+
+
+
+Definition at line 84 of file dg\+\_\+system.\+h.
 
 
 
@@ -83,6 +119,15 @@ L\+I\+N\+UX&\\
 \end{DoxyEnumFields}
 
 
+Definition at line 27 of file dg\+\_\+system.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 \{\mbox{\hyperlink{dragon_2system_2dg__system_8h_a3f3d2903c7f533d4714d065386a9e6e8a24dfb0dfbc26bfbff6ba7d638f7b9ceb}{WINDOWS}}, \mbox{\hyperlink{dragon_2system_2dg__system_8h_a3f3d2903c7f533d4714d065386a9e6e8aff5bdb06094faa574583542e4068d1c4}{LINUX}}\} \mbox{\hyperlink{dragon_2system_2dg__system_8h_afc0d143b196dcaf1a61d37fea9d3c479}{os\_t}};}
+
+\end{DoxyCode}
+
+
 \doxysubsection{Variable Documentation}
 \mbox{\Hypertarget{system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04b9d}\label{system_2dg__system_8h_a9c4ab189c2f018bc7ccc8ba4f6e04b9d}} 
 \index{dg\_system.h@{dg\_system.h}!DEBUG@{DEBUG}}
@@ -90,9 +135,25 @@ L\+I\+N\+UX&\\
 \doxysubsubsection{\texorpdfstring{DEBUG}{DEBUG}}
 {\footnotesize\ttfamily const bool D\+E\+B\+UG = false}
 
+
+
+Define debug output. 
+
+
+
+Definition at line 77 of file dg\+\_\+system.\+h.
+
 \mbox{\Hypertarget{system_2dg__system_8h_ae1329ee6e19fdd03bf941d5f1f70cf33}\label{system_2dg__system_8h_ae1329ee6e19fdd03bf941d5f1f70cf33}} 
 \index{dg\_system.h@{dg\_system.h}!IS\_EPITECH@{IS\_EPITECH}}
 \index{IS\_EPITECH@{IS\_EPITECH}!dg\_system.h@{dg\_system.h}}
 \doxysubsubsection{\texorpdfstring{IS\_EPITECH}{IS\_EPITECH}}
 {\footnotesize\ttfamily const bool I\+S\+\_\+\+E\+P\+I\+T\+E\+CH = false}
+
+
+
+Define E\+P\+I\+T\+E\+CH restrictions. 
+
+
+
+Definition at line 64 of file dg\+\_\+system.\+h.
 
